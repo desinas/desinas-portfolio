@@ -1,0 +1,391 @@
+/*
+ * General styling for the page
+ */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	color: #333
+}
+
+h1 {
+	font-size: 32px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 28px;
+	margin: 0;
+	padding: 35px 0px 35px 0px;
+	text-align: center;
+}
+
+h3 {
+  font-size: 21px;
+	margin:0;
+  color: orange;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+	color: #ccc;
+	opacity: 1;
+}
+
+ul {
+	font-size: 21px;
+}
+
+li {
+	padding-bottom: 18px;
+}
+
+
+/*
+ * Using FlexBox for every part of the page
+ */
+
+.flexbox_container {
+	width: 100%;
+	display: flex;
+}
+
+
+/*
+ * Style Nav Menu
+ */
+
+.logo {
+	width: 100px;
+	height: 100px
+}
+
+.intro {
+	width: 85%;
+	text-align: right;
+	margin: 15px 30px 10px 0px;
+}
+
+
+.menu {
+	padding:15px 15px 15px 15px;
+	background-color: #444;
+	color: white;
+	text-align: right;
+}
+
+.item {
+	margin-right: 30px;
+}
+
+
+/*
+ * Image for the background of the page
+ * with parallax scrolling effect
+ */
+
+.parallax {
+    background-image: url("../img/hero_image.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*
+ * About Section
+ */
+
+#about {
+	width: 100%;
+}
+
+.about_text{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+
+/*
+ * Featured Projects
+ */
+
+figure {
+	width: 33.3%;
+	margin: 0 10px 15px 10px;
+	position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #222;
+}
+
+figure:hover .overlay {
+  opacity: 0.8;
+}
+
+#projects {
+	padding-top: 15px;
+	padding-bottom: 45px;
+	background-color: #eee ;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project_image {
+	width: 100%;
+}
+
+.project_description {
+	text-align: center;
+}
+
+
+
+/*
+ * Contact info
+ */
+
+ #contact {
+	padding: 10px 0 10px 0;
+ }
+
+ .contact_info {
+ 	width: 50%;
+ 	padding-left: 15px;
+ }
+
+ li > a:link {
+	color:black;
+ }
+
+.icon {
+	padding: 0 15px 0 15px;
+}
+
+/*
+ * Footer part of the site styling
+ */
+
+footer {
+  margin: 0;
+  background-color: black;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: white;
+}
+
+.social_icons {
+	background-color: #444;
+	text-align: center;
+	padding: 15px 0 15px 0;
+	font-size: 16px;
+}
+
+/*
+ * Screen size 800px media query;
+ */
+
+@media only screen and (max-width: 800px) {
+
+  h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	/*Hero Image*/
+
+	.parallax {
+   		height: 575px;
+  }
+
+  /*About*/
+
+	.about_image{
+		width: 50%;
+		height: 70%;
+	}
+
+	/*Contact*/
+
+	#contact {
+		margin: 0;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+
+  .contact_info {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+/*
+ * Screen Size 460px media query;
+ */
+
+@media only screen and (max-width: 460px) {
+
+ 	/*General*/
+
+    p {
+     	font-size: 12px;
+ 		padding-bottom: 10px;
+ 	}
+
+ 	h1 {
+ 		font-size: 21px;
+ 	}
+
+ 	h2 {
+ 		font-size: 18px;
+ 		padding: 16px;
+ 	}
+
+ 	h3 {
+ 		font-size: 16px;
+ 	}
+
+ 	ul {
+ 		font-size: 16px;
+ 	}
+
+
+ 	/* Flexbox Container */
+
+ 	.flexbox_container{
+ 		flex-wrap:wrap;
+ 	}
+
+
+ 	/* Menu */
+
+ 	.logo {
+    	width: 75px;
+    	height: 75px
+  }
+
+  .intro {
+	 width: 70%;
+	 text-align: right;
+	 margin: 15px 20px 10px 0;
+  }
+
+ 	.menu {
+ 		font-size: 14px;
+ 		padding-right: 0;
+ 	}
+
+ 	/*Hero Image*/
+
+ 	.parallax {
+        height: 440px;
+        background-attachment: scroll;
+ 	}
+
+ 	/*About*/
+
+ 	.about_text {
+ 		width: 100%;
+ 		font-size: 14px;
+ 	}
+
+ 	.about_image {
+ 		width: 100%;
+ 		height: 70%;
+ 	}
+
+ 	/*Projects*/
+
+    figure {
+ 		width: 80%;
+ 		padding-left: 10%;
+ 		padding-right: 10%;
+ 	}
+
+ 	#projects {
+ 		padding: 0;
+ 	}
+
+ 	.overlay {
+ 		width: 80%;
+ 		margin-left: 10%;
+ 		margin-right: 10%;
+ 	}
+
+ 	.project_image {
+ 		align-items: center;
+ 	}
+
+ 	/*Contact*/
+
+  #contact {
+	  margin: 0;
+	  padding-bottom: 1px;
+  }
+
+ 	.contact_info {
+ 		width: 100%;
+ 		padding: 0;
+ 		margin: 0;
+ 	}
+
+ 	/*Footer*/
+
+ 	.social_icons {
+ 		text-align: center;
+ 		padding: 10px 0 10px 0;
+ 		font-size: 12px;
+ 	}
+
+}
