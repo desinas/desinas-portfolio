@@ -2,15 +2,16 @@
  * General styling for the page
  */
 
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-body{
-	font-family: 'Roboto', sans-serif;
+body {
+	font-family: "Roboto", sans-serif;
 	font-weight: 100;
 	font-style: normal;
 	color: #333
@@ -30,7 +31,7 @@ h2 {
 
 h3 {
   font-size: 21px;
-	margin:0;
+	margin: 0;
   color: orange;
 }
 
@@ -79,12 +80,12 @@ li {
 .intro {
 	width: 85%;
 	text-align: right;
-	margin: 15px 30px 10px 0px;
+	margin: 15px 30px 10px 0;
 }
 
 
 .menu {
-	padding:15px 15px 15px 15px;
+	padding:15px;
 	background-color: #444;
 	color: white;
 	text-align: right;
@@ -114,10 +115,6 @@ li {
  * About Section
  */
 
-#about {
-	width: 100%;
-}
-
 .about_text{
 	width: 100%;
 	display: flex;
@@ -128,6 +125,9 @@ li {
 	line-height: 1.6;
 }
 
+#about {
+	width: 100%;
+}
 
 /*
  * Featured Projects
@@ -169,7 +169,6 @@ figure:hover .overlay {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -187,16 +186,16 @@ figure:hover .overlay {
  * Contact info
  */
 
- #contact {
+#contact {
 	padding: 10px 0 10px 0;
- }
+}
 
- .contact_info {
- 	width: 50%;
- 	padding-left: 15px;
- }
+.contact_info {
+    width: 50%;
+    padding-left: 15px;
+}
 
- li > a:link {
+li > a:link {
 	color:black;
  }
 
@@ -209,11 +208,11 @@ figure:hover .overlay {
  */
 
 footer {
-  margin: 0;
-  background-color: black;
-  padding: 10px 0 10px 0;
-  text-align: center;
-  color: white;
+    margin: 0;
+    background-color: black;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: white;
 }
 
 .social_icons {
@@ -228,45 +227,41 @@ footer {
  */
 
 @media only screen and (max-width: 800px) {
+    h1 {
+    	font-size: 28px;
+    }
 
-  h1 {
-		font-size: 28px;
-	}
+    h2 {
+    	font-size: 24px;
+    }
 
-	h2 {
-		font-size: 24px;
-	}
+    h3 {
+    	font-size: 20px;
+    }
 
-	h3 {
-		font-size: 20px;
-	}
-
-	/*Hero Image*/
-
+	 /*Hero Image*/
 	.parallax {
    		height: 575px;
   }
 
-  /*About*/
-
+     /*About*/
 	.about_image{
 		width: 50%;
 		height: 70%;
 	}
 
 	/*Contact*/
-
 	#contact {
 		margin: 0;
 		padding-top: 1px;
 		padding-bottom: 1px;
 	}
 
-  .contact_info {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
+    .contact_info {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 
@@ -277,7 +272,6 @@ footer {
 @media only screen and (max-width: 460px) {
 
  	/*General*/
-
     p {
      	font-size: 12px;
  		padding-bottom: 10px;
@@ -300,16 +294,12 @@ footer {
  		font-size: 16px;
  	}
 
-
  	/* Flexbox Container */
-
  	.flexbox_container{
  		flex-wrap:wrap;
  	}
 
-
  	/* Menu */
-
  	.logo {
     	width: 75px;
     	height: 75px
@@ -327,14 +317,12 @@ footer {
  	}
 
  	/*Hero Image*/
-
  	.parallax {
         height: 440px;
         background-attachment: scroll;
  	}
 
- 	/*About*/
-
+ 	 /*About*/
  	.about_text {
  		width: 100%;
  		font-size: 14px;
@@ -346,7 +334,6 @@ footer {
  	}
 
  	/*Projects*/
-
     figure {
  		width: 80%;
  		padding-left: 10%;
@@ -368,11 +355,10 @@ footer {
  	}
 
  	/*Contact*/
-
-  #contact {
-	  margin: 0;
-	  padding-bottom: 1px;
-  }
+    #contact {
+        margin: 0;
+        padding-bottom: 1px;
+    }
 
  	.contact_info {
  		width: 100%;
@@ -380,8 +366,7 @@ footer {
  		margin: 0;
  	}
 
- 	/*Footer*/
-
+ 	 /*Footer*/
  	.social_icons {
  		text-align: center;
  		padding: 10px 0 10px 0;
